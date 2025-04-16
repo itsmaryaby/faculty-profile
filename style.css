@@ -1,1 +1,105 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 1rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+/* Faculty container */
+.faculty-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Faculty Card */
+.faculty-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  max-width: 300px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.faculty-card:hover {
+  background-color: #eef6ff;
+}
+
+.faculty-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.faculty-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.faculty-card .title {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.faculty-card a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.faculty-card a:hover {
+  text-decoration: underline;
+}
+
+.tags {
+  list-style: none;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tags li {
+  background-color: #d1ecf1;
+  color: #0c5460;
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faculty-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .faculty-card {
+    max-width: 90%;
+  }
+}
 
